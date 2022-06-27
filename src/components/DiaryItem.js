@@ -1,5 +1,5 @@
 // process.env.PUBLIC_URL : public 디렉토리의 주소
-
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import MyButton from "./MyButton";
 
@@ -37,4 +37,4 @@ const DiaryItem = ({ id, emotion, content, date }) => {
   );
 };
 
-export default DiaryItem;
+export default React.memo(DiaryItem);
